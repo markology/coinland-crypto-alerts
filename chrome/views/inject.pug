@@ -1,0 +1,15 @@
+doctype html
+
+html
+  head
+    meta(http-equiv="Content-Security-Policy" content="default-src * http://18.221.164.218:3000/api/ http://* data: 'unsafe-eval'; connect-src 'self' * http://18.221.164.218:3000/api/bittrex/getBalances; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline'  'unsafe-eval'")
+    title Redux TodoMVC Example (Inject)
+    style.
+      html, body {
+        background-color: "white"
+      }
+  body
+    #root
+    if env !== 'prod'
+      script(src='chrome-extension://lmhkpmbekcpmknklioeibfkpmmfibljd/js/redux-devtools-extension.js')
+    script(src=env == 'prod' ? '/js/todoapp.bundle.js' : 'https://localhost:3000/js/todoapp.bundle.js')

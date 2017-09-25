@@ -1,0 +1,23 @@
+{
+  "version": "0.0.0",
+  "name": "Coinland Crypto Alerts",
+  "manifest_version": 2,
+  "description": "Coinland Crypto Alerts",
+  "browser_action": {
+    "default_title": "Coinland Crypto Alerts",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/321-512.png",
+    "48": "img/321-5122.png",
+    "128": "img/321-5123.png"
+  },
+  "web_accessible_resources": [
+    "inject.html"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [ "contextMenus", "notifications", "tabs", "storage", "https://github.com/*", "contextMenus", "tabs", "http://*/", "https://*/"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
