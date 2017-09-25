@@ -16,7 +16,7 @@ $ git clone https://github.com/markology/coinland-crypto-alerts.git
 $ npm install
 $ npm run build
 
-# Then go to chrome://extensions, enabled developer mode and and unpack the build folder to run the extension
+# Then go to chrome://extensions, enable developer mode and and unpack the build folder to run the extension
 ```
 
 ## Compress
